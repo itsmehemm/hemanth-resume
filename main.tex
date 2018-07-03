@@ -1,0 +1,190 @@
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.91]{geometry}
+%\setlength{\hintscolumnwidth}{2.2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Hemanth}{Murali}
+\title{Software Development Engineer, PayPal India}                               % optional, remove / comment the line if not wanted
+
+%\address{9/173, Avvaiyar St.}{Agaram Then}{TN, India}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91~95516~46440}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{hemanthprasathmurali@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/itsmehemm}                         % optional, remove / comment the line if not wanted
+\extrainfo{github.com/itsmehemm}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{}                                 % optional, remove / comment the line if not wanted
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Career Objective}
+\cvitem{}{To get associated with a progressive organization that provides opportunity to utilize my skills, to make innovations and to show my passion for technology.}
+
+\section{Education}
+\cventry{July, 2013 -- May, 2017}{B.E Computer Science and Engineering}{}{}{}{\textit{Madras Institute of Technology, }{Anna University}{\\ Cumulative Grade Point Average - }\textit{9.4/10.0}}  % arguments 3 to 6 can be left empty
+
+\cventry{2011 -- 2013}{State Board of Higher Secondary Education, Tamil Nadu}{}{}{}{\textit{Zion Matriculation Higher Secondary School, }{Chennai}{\\ Overall Percentage - }\textit{97.42\%}}
+
+\cventry{2010}{State Board of Matriculation Education, Tamil Nadu}{}{}{}{\textit{Zion Matriculation Higher Secondary School, }{Chennai}{\\ Overall Percentage - }\textit{96.60\%}}
+
+\section{Undergraduate Thesis}
+\cvitem{Title}{\textbf{Query to Knowledge Recommender System for Online Forums.}}
+\cvitem{Supervisor}{Dr. P. Jayashree, \textit{pjshree@annauniv.edu}}
+\cvitem{Description}{\begin{itemize} 
+\item Built a Knowledge Recommendation Engine for a discussion forum using Collaborative Filtering techniques to recommend articles based on the user's activities and to identify potential users to answer a question posted. A Latent Dirichlet Allocation model was modelled to categorize the articles and, the numerical statistic method TF-IDF to rank the users based on their domain knowledge, thereby increasing the accuracy of the algorithm from \textbf{85\%} to \textbf{95\%}.  
+\item The accuracy of recommendations were evaluated based on the Normalized Discounted Cumulative Gain (NDCG) values.
+\end{itemize}}
+
+\section{Experience}
+\subsection{Full Time}
+\cventry{July, 2017 -- Present}{Software Development Engineer}{PayPal India}{Chennai}{}{
+Working as a Software Development Engineer for the Unbranded Payment Products at PayPal India.{}%
+\begin{itemize}%
+\item Built and scaled the Monthly Accounts Billing product for PRO20 \& PRO30 merchants using Node.js.
+\item Built several robust client-side dashboard frameworks and widget APIs.
+\item Redefining web and API tier technology stack from Struts 1.2 to Node-Krakenjs Application.
+\item Wrote JUnit tests for several Java components and used Selenium WebDrivers to run automated tests for PayPal web applications. 
+\end{itemize}}
+
+\subsection{Internship}
+\cventry{May, 2016 -- July, 2016}{Software Engineering Intern}{PayPal India}{Chennai}{}{
+Worked as a SDE Intern in Data Analytics and Risk team of PayPal India.{}%
+\begin{itemize}%
+\item Designed a Single Gateway dashboard for all Risk Products (Consume, Seller and Regional Risk) using HTML5 and PHP.
+\item Redesigned the entire Key Performance Indicator (KPI) portal that renders the critical values and key targets for various organizations across PayPal.
+\item Wrote scripts to process live and huge amount of data and update it in Oracle Database to determine the KPIs.
+\item Received a \textbf{return offer} from PayPal for an outstanding performance during the internship.
+\end{itemize}}
+
+\section{Skills and Interests}
+\cvitem{General}{Scalable Databases, Machine Learning, Competitive Programming}
+\cvitem{Languages}{Java 8, NodeJs, C, C++, Python}
+\cvitem{Frameworks}{Struts 1.5, Raptor, Angular 4, React.js, Kraken}
+\cvitem{Tools}{Eclipse, Enterprise Architect, Android Studio, Microsoft SQL Server, Jira, Rally}
+\cvitem{Others}{Data structures, Design and Analysis of Algorithms }
+
+\section{Projects}
+\cventry{Machine Learning}{Tambura, A Music Recommender System}{}{}{}{
+\begin{itemize}%
+\item Designed a Music Recommender System for Kollywood music using Collaborative Filtering mechanism.
+\item Incorporated Partial Deep-content based Filtering to improve accuracy over \textbf{10\%} in predicting music.
+\end{itemize}}
+
+\cventry{\textbf{code.fun.do} Microsoft}{ICE (In case of Emergency)}{}{}{}{
+\begin{itemize}%
+\item Developed an android application that serves as an aid to the elderly to get immediate assistance in times of emergency situations from the hospitals nearby and to inform their family members.
+\item The User Interface of the application has been made very simple to use so that the senior citizens could use it without getting into the learning process of using sophisticated mobile apps.
+\end{itemize}}
+
+\cventry{Computer Networks}{Secure Routing Messenger}{}{}{}{
+\begin{itemize}%
+\item Developed an application to transmit data between a pair of nodes by consequently forwarding data packets from one node to another until the destination is reached, instead of transmitting data through a fixed base station.
+\item Location Aided Routing has been used to minimize routing overhead.
+\end{itemize}}
+
+\cventry{Web Development \& Databases}{MIT Student Portal}{}{}{}{
+\begin{itemize}%
+\item Designed a database design for a discussion forum using MySQL.
+\item The application has been made to control through a PHP program and HTML web pages to facilitate the students to interact with each other, with college administrators and to discuss about all happenings in the University.
+\end{itemize}}
+
+\section{Honors and Awards}
+\cventry{Dec, 2017}{Global Rock-star Award 2017}{PayPal}{}{}{
+Received the award from \textit{Arnold Goldberg}, Vice President, Merchant Product and Technology, PayPal for an outstanding technical presentation with hands-on experience on \textit{"Merchant Life cycle - Unbranded Payments of PayPal"} in the APAC MTS SUMMIT 2017.
+}
+
+\cventry{Dec, 2017}{Spot Award 2017}{PayPal}{}{}{
+Received the award from \textit{VC Sekhar}, Director, Software Development, Payment Products, PayPal for \textit{"Effort, Dedication, Innovation and Curiosity"} in work. 
+}
+
+
+\cventry{2016, 2017}{code.fun.do}{Microsoft Corporation}{}{}{
+Finalist in code.fun.do, a one week Hackathon conducted by Microsoft Corporation at Anna University in February, 2016 and February, 2017.
+}
+
+\cventry{2015}{Firefox Hackathon}{Mozilla Corporation}{}{}{
+Finalist in Firefox Hackathon, a three hour Hackathon conducted by Mozilla Corporation at Madras Institute of Technology in March, 2015.
+}
+
+\cventry{March, 2015}{Select *}{Prayatna}{}{}{
+Won 3rd place of more than 100 teams in Select *, an SQL query based contest of Prayatna, a National Level Technical symposium conducted by MIT Campus.
+}
+
+\cventry{Feb, 2015}{On-site Programming Contest}{Kurukshetra}{}{}{
+Won 2nd place of more than 250 teams in the On-site Programming Contest of Kurukshetra, a National Level Technical Symposium conducted by the College of Engineering, Guindy.
+}
+
+\cventry{2013}{District First, HSC Examinations}{Tamil Nadu}{}{}{
+Topped in the Higher Secondary Examinations in the district of \textbf{Kancheepuram} under the TNSTC quota.
+}
+
+\cventry{2013}{Tamil Nadu Engineering Rankings}{Tamil Nadu}{}{}{
+Secured a state level rank of \textbf{1274} (among 1 lakh students) in the Tamil Nadu Engineering Admissions (TNEA) Ranking (\textbf{Top 0.1\%})
+}
+
+
+
+\section{Positions of Responsibility}
+\cventry{July, 2015 -- July, 2017}{Placement Representative}{Anna University}{}{}{
+Been as a Placement Representative for 2 years for the Computer Science Department.{}%
+\begin{itemize}%
+\item Engaged with the HR executives from various organizations during campus hiring.
+\item Served as a bridge between fellow students and the organizations to assist for placements.
+\end{itemize}}
+
+\cventry{July, 2014 -- July, 2017}{Programming Lecturer \& Problem Setter}{Coder's Club}{MIT Campus}{}{
+Been as an active member in the Coder's Club of MIT, Student Organization of MIT Campus.{}%
+\begin{itemize}%
+\item Responsible for guiding students with tutorial problems for better understanding of the course material.
+\item Conducted several algorithmic contests in Hackerrank and Codechef for the community.
+\end{itemize}}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
